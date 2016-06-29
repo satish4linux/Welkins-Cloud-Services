@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.but{
+	background:blue;
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	border-radius:4px;
+	border:2px groove blue;
+	padding:4px;
+}
+</style>
+</head>
+<body>
+
+<div>
+<h2 style="color:grey;">Ekeka:</h2>
+<form method="POST" action="http://192.168.43.18/cgi-bin/test.py">
+<b>NFS mode:</b><br /><br />
+<table>
+<tr>
+<td><b>Enter size of storage:</b></td>
+<td><input type="text" name="size" value=""/> </td></tr>
+<tr>
+<td><b>Enter name of storage folder:</b></td>
+<td><input type="text" name="obj_n" value=""/></td></tr>
+<tr>
+<td><b>Enable Snapshot</b></td>
+<td><input type="checkbox" name="snap" value=""/></td></tr>
+<br />
+<tr>
+<td><input class="but" type="submit" value="Launch"/></td></tr>
+</table>
+</form>
+</div>
+</body>
+</html>
