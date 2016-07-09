@@ -1,3 +1,12 @@
+#!/usr/bin/python
+
+import cgi
+
+print "content-type:text/html"
+
+print ""
+
+print '''
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,18 +24,29 @@
 </head>
 <body>
 <div>
-<h2 style="color:grey;">Katrina:</h2><h3 style="color:grey;">(Infrastructure As A Service)</h3>
-<p><b>Katrina</b> is the most demanded service of WCS where you can get <br />
-<b>a full fledged running Operating System<br />
+<h2 style="color:grey;">Halola</h2>
+<p><b>Halola</b> is that service of WCS where you can get a <b>software<br />
 on demand</b> ,anytime,anywhere.We care about your interest<br /> and try to
-provide you the freedom of using a filestorage of  <br />
-any size elastically.
-
+provide those softwares which you need almost<br /> everyday.
 </p>
 <br /><br/>
 <a class="but" href="http://www.welkins.com/cgi-bin/dash.py"><b>Go to Dashboard</b></a>&nbsp;&nbsp;
-<a class="but" href="http://www.welkins.com/cgi-bin/iaas.py"><b>Proceed >>></b></a>
+<a class="but" href="http://www.welkins.com/saas_soft.html"><b>Proceed >>></b></a>
 </div>
 </body>
 </html>
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
 

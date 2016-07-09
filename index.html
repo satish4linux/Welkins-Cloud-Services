@@ -5,9 +5,85 @@
 Welkins Cloud Services
 </title>
 <link rel="stylesheet" type="text/css" href="styles.css"/>
-</head>
-<body>
+<script>
+function show(elmnt)
+{
+	document.getElementById(elmnt).style.visibility="visible";
+}
 
+function hide(elmnt)
+{
+	document.getElementById(elmnt).style.visibility="hidden";
+}
+function hide()
+{
+x=document.getElementById('cover')
+y=document.getElementById('pic1')
+z=document.getElementById('pic2')
+x.style.width="0px";
+x.style.height="0px";
+y.style.left="-600px";
+z.style.right="-600px";
+document.getElementById('blink').innerHTML=" ";
+}
+function blinking_header()
+{
+if (!document.getElementById('blink').style.color)
+	{
+	document.getElementById('blink').style.color="blue";
+	}
+if (document.getElementById('blink').style.color=="blue")
+	{
+	document.getElementById('blink').style.color="black";
+	}
+else
+	{
+	document.getElementById('blink').style.color="blue";
+	}
+timer=setTimeout("blinking_header()",200);
+}
+
+function stoptimer()
+{
+clearTimeout(timer);
+}
+
+</script>
+<style>
+div#cover{
+	width:100%;
+	height:590px;
+	background:white;
+	transition: width 2s, height 2s;
+}
+div#pic1{
+	width:600px;
+	height:420px;
+	position:fixed;
+	top:100px;
+	float:left;
+	left:0px;
+	transition: left 2s;
+}
+div#pic2{
+	width:600px;
+	height:420px;
+	position:fixed;
+	top:100px;
+	float:right;
+	right:0px;
+	transition: right 2s;
+}
+</style>
+</head>
+<body onload="blinking_header()" onunload="stoptimer()">
+<center>
+<div id='cover'>
+<span style="font-size:40px;" id="blink" onclick="hide()"><b>Welkins Services<br/><span style="font-size:25px;">(Enter the website)</span></b></span><br />
+<div id='pic1'><img src='http://www.welkins.com/cloud.png' width=550px height=400px/></div> 
+<div id='pic2'><img src='http://www.welkins.com/cloud.png' width=550px height=400px/></div> 
+</div>
+</center>
 <!---the header of the page --->
 
 <div class="top">
@@ -15,7 +91,7 @@ Welkins Cloud Services
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="40"><b><i>Welkins</i></b></font>&nbsp;&nbsp;&nbsp;&nbsp;<sup style="vertical-align:super;font-size:20px;"><b><i>Cloud services</i></b></sup>
 </div>
 <div class="topright">
-<a class="sign" href="http://192.168.43.18/cgi-bin/signup.py">Sign Up</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="sign" href="http://192.168.43.18/cgi-bin/login.py">Log In</a>
+<a class="sign" href="http://www.welkins.com/cgi-bin/signup.py">Sign Up</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="sign" href="http://www.welkins.com/cgi-bin/login.py">Log In</a>
 </div>
 </div>
 
