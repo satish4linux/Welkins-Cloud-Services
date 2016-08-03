@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Welkins Cloud Services
+</title>
+<link rel="stylesheet" type="text/css" href="styles.css"/>
+<script>
+function show(elmnt)
+{
+	document.getElementById(elmnt).style.visibility="visible";
+}
+
+function hide(elmnt)
+{
+	document.getElementById(elmnt).style.visibility="hidden";
+}
+function hide()
+{
+x=document.getElementById('cover')
+y=document.getElementById('pic1')
+z=document.getElementById('pic2')
+x.style.width="0px";
+x.style.height="0px";
+y.style.left="-600px";
+z.style.right="-600px";
+document.getElementById('blink').innerHTML=" ";
+}
+function blinking_header()
+{
+if (!document.getElementById('blink').style.color)
+	{
+	document.getElementById('blink').style.color="blue";
+	}
+if (document.getElementById('blink').style.color=="blue")
+	{
+	document.getElementById('blink').style.color="black";
+	}
+else
+	{
+	document.getElementById('blink').style.color="blue";
+	}
+timer=setTimeout("blinking_header()",200);
+}
+
+function stoptimer()
+{
+clearTimeout(timer);
+}
+
+</script>
+<style>
+div#cover{
+	width:100%;
+	height:590px;
+	background:white;
+	transition: width 2s, height 2s;
+}
+div#pic1{
+	width:600px;
+	height:420px;
+	position:fixed;
+	top:100px;
+	float:left;
+	left:0px;
+	transition: left 2s;
+}
+div#pic2{
+	width:600px;
+	height:420px;
+	position:fixed;
+	top:100px;
+	float:right;
+	right:0px;
+	transition: right 2s;
+}
+</style>
+</head>
+<body onload="blinking_header()" onunload="stoptimer()">
+<center>
+<div id='cover'>
+<span style="font-size:40px;" id="blink" onclick="hide()"><b>Welkins Services<br/><span style="font-size:25px;">(Enter the website)</span></b></span><br />
+<div id='pic1'><img src='http://www.welkins.com/cloud.png' width=550px height=400px/></div> 
+<div id='pic2'><img src='http://www.welkins.com/cloud.png' width=550px height=400px/></div> 
+</div>
+</center>
+<!---the header of the page --->
+
+<div class="top">
+<div class="topleft">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="40"><b><i>Welkins</i></b></font>&nbsp;&nbsp;&nbsp;&nbsp;<sup style="vertical-align:super;font-size:20px;"><b><i>Cloud services</i></b></sup>
+</div>
+<div class="topright">
+<a class="sign" href="http://www.welkins.com/cgi-bin/signup.py">Sign Up</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="sign" href="http://www.welkins.com/cgi-bin/login.py">Log In</a>
+</div>
+</div>
+
+<!---the menu code --->
+
+<div class="mainHeader">
+	<nav><ul>
+		<li><a href="http://www.welkins.com/index.html">HOME</a></li>
+		<li><a href="#">MY SERVICES</a></li>
+		<li><a href="#">MY ACCOUNT</a></li>
+		<li><a href="#">ABOUT WELKINS</a></li>
+		<li><a href="#">FEEDBACK</a></li>
+	</ul></nav>
+</div>
+
+<!---background image --->
+<div class="back">
+<p class="show" align="center">Get Ready for Cloudification!!!<p/>
+<p class="show" align="center">Welkins At your Service<p/>
+</div>
+<!---services --->
+<div class="imgs">
+<img  class="up" title="Software As A Service" src="1.jpg"/>
+<img class="up" title="Storage As A Service" src="2.jpg"/>
+<img class="up" title="Infrastructure As A Service" src="3.jpg"/>
+<img class="up" title="Platform As A Service" src="4.jpg"/>
+</div>
+<!---footer --->
+
+<div class="foot">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="part">
+<ul style="list-style-type:none;font-family:Copperplate Gothic;color:white;">
+<li style="font-size:20px;"><b>Contact Us :</b></li><br />
+<li style="font-size:15px;">National Institute of Technology,Patna</li>
+<li style="font-size:15px;">Ashok Rajpath,Mahendru</li>
+<li style="font-size:15px;">Patna,Bihar-800005</li>
+</ul>
+</div>
+<div class="part">
+<ul style="list-style-type:none;font-family:Copperplate Gothic;color:white;">
+<li style="font-size:22px;"><b>Our Policy :</b></li><br />
+<li style="font-size:15px;">General Policy</li>
+<li style="font-size:15px;">Refund Policy</li>
+<li style="font-size:15px;">Pricing Policy</li>
+</ul>
+</div>
+<div class="part">
+<ul style="list-style-type:none;font-family:Copperplate Gothic;color:white;">
+<li style="font-size:22px;"><b>Connect us :</b></li><br />
+<li style="font-size:15px;">Facebook</li>
+<li style="font-size:15px;">Twitter</li>
+<li style="font-size:15px;">Youtube</li>
+</ul>
+</div>
+</div>
+
+</body>
+</html>
