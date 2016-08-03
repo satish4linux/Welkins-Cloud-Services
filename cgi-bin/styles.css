@@ -1,0 +1,172 @@
+body{
+	background:;
+}
+div.top{
+	width:100%;
+	height:130px;
+	background:url("top.jpg") no-repeat;
+	
+}
+
+div.topleft{
+	position:relative;
+	float:left;
+	width:50%;
+	height:110px;
+	font-family:Georgia;
+	color:white;
+	padding-top:20px;
+
+}
+
+div.topright{
+	position:relative;
+	float:right;
+	padding-left:130px;
+	padding-top:40px;
+	width:396px;
+	height:90px;
+	color:white;
+	font-family:Georgia;
+	
+}
+
+a.sign{
+	width:100px;
+	height:60px;
+	text-decoration:none;
+	font-family:Georgia;
+	color:black;
+	font-size:25px;
+	border:2px solid white;
+	padding:15px;
+	background:skyblue;
+	opacity:0.6;
+	border-radius:15px;
+}
+a.sign:hover{
+	background:black;
+	color:white;
+	opacity:1;
+	
+}
+
+.mainHeader nav {
+	background: black;
+	font-size: 1.143em;
+	height: 30px;
+	width:100%;
+	line-height: 20px;
+	font-family:Georgia;
+	margin: 0 auto 30px auto;
+	text-align: center;
+	box-shadow:0px 0px 25px white; 
+}
+.mainHeader nav ul {
+	list-style: none; 
+	margin: 0 auto;
+}
+
+.mainHeader nav ul li {
+	float: left; 
+	display: inline; 
+}
+	
+.mainHeader nav a:link, .mainHeader nav a:visited {
+	color: #fff;
+	display: inline-block;
+	height: 30px;
+	padding: 5px 23px;
+	text-decoration: none;
+}
+.mainHeader nav a:hover, .mainHeader nav a:active,
+.mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+	background: white;
+	color: black;
+	text-shadow: none !important;
+}
+
+div.back{
+	width:100%;
+	height:400px;
+	background:url(background.jpg);
+	background-size:cover;
+	overflow:hidden;
+	transition:background 1s linear;
+	opacity:1;
+}
+	
+p.show{
+	font-size:60px;
+	font-family:Elephant;
+	color:black;
+	transition:font-size 0.5s;
+}
+
+p.show:hover{
+	font-size:70px;
+	color:white;
+}
+div.imgs{
+	text-align:center;
+	width:100%;
+	height:150px;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+img.up{
+	box-shadow:10px 10px 10px black;
+	padding-left:30px;
+}
+
+div.foot{
+	background:black;
+	width:100%;
+
+	height:200px;
+}
+
+div.part{
+	float:left;
+	position:relative;
+	
+}
+
+div.logport{
+	width:40%;
+	text-align:center;
+	position:relative;
+	height:200px;
+	margin-bottom:30px;
+	border-radius:4px;
+}
+
+div.signport{
+	width:40%;
+	text-align:center;
+	position:relative;
+	height:600px;
+	margin-bottom:30px;
+	border-radius:4px;
+	
+}
+
+td.key{
+	font-size:20px;
+	line-height:8px;
+	color:grey;
+	font-family:Times New Roman;
+	padding:10px;
+}
+
+.in{
+	padding:5px;
+	border:2px ridge white;
+	background:lightgrey;
+	border-radius:3px;
+}
+
+.in:focus{
+	box-shadow:0px 0px 10px black;
+}

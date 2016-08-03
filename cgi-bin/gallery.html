@@ -1,0 +1,78 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+iframe#fset{
+	width:300px;
+	height:300px;
+	border:3px groove grey;
+	border-radius:4px;
+	z-index:1;
+	box-shadow:0px 0px 10px black;
+}
+div#frame{
+	position:relative;
+	float:left;
+	margin:20px;
+	z-index:0;
+}
+div#cover {
+    width: 1337px;
+    height: 800px;
+    background: #808080 none repeat scroll 0% 0%;
+    visibility:hidden;
+    position: absolute;
+}
+button#close {
+    position: relative;
+    float: right;
+    margin: 10px;
+    width: 49px;
+    height: 37px;
+    visibility: hidden;
+}
+</style>
+<script type="text/javascript" >
+function expand()
+{
+
+x=document.getElementById('fset')
+b=document.getElementById('close')
+c=document.getElementById('cover')
+c.style.visibility="visible";
+b.style.visibility="visible";
+}
+</script>
+</head>
+<body>
+<div id='cover'>
+</div>
+<div id='frame'>
+<div id='os'>
+<iframe id="fset" src="http://192.168.43.50/vnc/index.html?ip=192.168.43.50&port=7320"></iframe>
+</div>
+<div id='os_detail'><center><br />
+<img src='http://www.welkins.com/play.png' width='30px' height='30px'/>&nbsp;&nbsp;&nbsp;&nbsp;
+<img src='http://www.welkins.com/shutdown.png' width='30px' height='30px'>&nbsp;&nbsp;&nbsp;&nbsp;
+<img src='http://www.welkins.com/fullscreen.png' onclick="expand()" width='20px' height='20px'></center><br />
+<center><b>Redhat Linux</b></center>
+</div>
+</div>
+<div id='frame'>
+<div id='os'>
+<iframe id="fset" src="http://192.168.43.50/vnc/index.html?ip=192.168.43.50&port=8320"></iframe>
+</div>
+<div id='os_detail'>
+<center><br />
+<img src='http://www.welkins.com/play.png' width='30px' height='30px'/>&nbsp;&nbsp;&nbsp;&nbsp;<img src='http://www.welkins.com/shutdown.png' width='30px' height='30px'>&nbsp;&nbsp;&nbsp;&nbsp;<img src='http://www.welkins.com/fullscreen.png' width='20px' height='20px'></center><br />
+<center><b>Kali Linux</b></center></div>
+</div>
+<div style="position:relative;float:right;margin:10px;">
+<button id='close' ><img src='http://www.welkins.com/close.png' width='25px' height='25px'></button>
+</div>
+</body>
+</html>
+
+
